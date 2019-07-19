@@ -1,0 +1,7 @@
+#donwload az cli or login azure cloud cli
+# run   ssh-keygen -t rsa -b 2048
+
+write rsh.pub into clusterCreate.yaml
+
+clusterCreate.yaml
+
