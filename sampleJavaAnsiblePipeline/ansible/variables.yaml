@@ -1,0 +1,6 @@
+---
+app_name: "{{ app_name }}"
+app_version: "{{ app_version }}"
+working_dir: "{{ app_version | replace('.','-') }}"
+dh_user: "docker user "
+dh_pass: "docker password"
