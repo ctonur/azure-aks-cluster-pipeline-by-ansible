@@ -2,7 +2,7 @@
 FROM registry.access.redhat.com/openshift3/jenkins-slave-base-rhel7
 
 
-ENV SONARQUBE_SCANNER_VERSION=3.2.0.1227 \
+ENV SONARQUBE_SCANNER_VERSION=4.0.0.1744 \
     PATH=$PATH:/sonarqube-scanner/bin \
     HOME=/home/jenkins \
     JAVA_VERSION=8u191 \
