@@ -1,13 +1,14 @@
     
-FROM openshift/jenkins-slave-base-centos7
+FROM registry.access.redhat.com/openshift3/jenkins-slave-base-rhel7
 
-USER root
 
 ENV SONARQUBE_SCANNER_VERSION=3.2.0.1227 \
     PATH=$PATH:/sonarqube-scanner/bin \
     HOME=/home/jenkins \
     JAVA_VERSION=8u191 \
     BUILD_VERSION=b12
+    
+ENV HTTPS_PROXY=http://192.168.11.140:8080
 
 # Install Java without interaction
 RUN yum install -y centos-release-scl-rh && \
